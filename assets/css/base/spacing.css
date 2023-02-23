@@ -1,0 +1,81 @@
+:root {
+  --spacing-left-container: min(10vw, 6rem);
+}
+
+/* paddings */
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.py-1 {
+  padding-block: 1rem;
+}
+.py-2 {
+  padding-block: 2rem;
+}
+.py-3 {
+  padding-block: 3rem;
+}
+.px-1 {
+  padding-inline: 1rem;
+}
+.px-2 {
+  padding-inline: 2rem;
+}
+.px-3 {
+  padding-inline: 3rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+/* margins */
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.my-1 {
+  margin-block: 1rem;
+}
+.my-2 {
+  margin-block: 2rem;
+}
+.my-3 {
+  margin-block: 3rem;
+}
+.mx-1 {
+  margin-inline: 1rem;
+}
+.mx-2 {
+  margin-inline: 2rem;
+}
+.mx-3 {
+  margin-inline: 3rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}

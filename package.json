@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "postcss src/css/style.css --dir dist --watch"
+    "postcss": "postcss assets/css/style.css --dir dist --watch"
   },
   "keywords": [],
   "author": "",

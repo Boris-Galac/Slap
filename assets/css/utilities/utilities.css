@@ -1,0 +1,77 @@
+@media (min-width: 90rem) {
+  .container {
+    max-width: 80vw;
+    margin-inline: auto;
+  }
+}
+
+/* buttons */
+.primary-btn,
+.secondary-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  border: 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: max-content;
+  background-color: transparent;
+}
+.primary-btn {
+  background-color: var(--primary-btn-clr);
+  color: var(--white);
+  transition: 0.15s;
+  box-shadow: 0 1px 5px gray;
+}
+.primary-btn:hover {
+  background-color: var(--primary-btn-clr-hover);
+  box-shadow: 0 1.5px 10px hsla(0, 0%, 0%, 0.599);
+}
+.secondary-btn {
+  background-color: #fff;
+  border: 2px solid var(--primary-btn-clr);
+  font-weight: 500;
+  color: var(--primary-btn-clr);
+  transition: 0.15s;
+}
+.secondary-btn a {
+  color: var(--primary-btn-clr);
+}
+.secondary-btn:hover {
+  background-color: var(--neutral-200);
+}
+
+/* layout */
+
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.d-grid {
+  display: grid;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+.text-center {
+  text-align: center;
+}
+
+/* spacing  */
+
+/* .px-2 {
+  padding-inline: min(5vw, 2rem);
+}
+.px-1 {
+  padding-inline: min(5vw, 1rem);
+} */

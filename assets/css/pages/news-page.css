@@ -1,0 +1,13 @@
+.news-section {
+  position: relative;
+  gap: 2rem;
+}
+.news-section .container {
+  gap: 2rem;
+}
+.news-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assests/images/news-section-bg.jpg");
+}

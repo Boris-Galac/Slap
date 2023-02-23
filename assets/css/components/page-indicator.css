@@ -1,0 +1,42 @@
+/* page indicator section */
+.page-indicator-section {
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+}
+.breadcrumb__wrapper {
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 2rem;
+  padding-left: min(10vw, 6rem);
+  background: linear-gradient(90deg, #e7eff7 0%, rgba(231, 239, 247, 0) 80.03%);
+}
+.breadcrumb__page {
+  font-weight: 500;
+}
+.breadcrumb__page {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.bread__first-page {
+  color: var(--neutral-600);
+}
+.bread__second-page {
+  color: var(--neutral-800);
+}
+
+/* page indicator */
+
+.page-indicator {
+  background-color: var(--white);
+  padding-block: 2rem;
+  padding-inline-start: 2rem;
+  padding-left: var(--spacing-left-container);
+}
+.page-indicator__heading {
+  font-size: var(--page-indicator-heading);
+  color: var(--neutral-600);
+  text-transform: uppercase;
+}

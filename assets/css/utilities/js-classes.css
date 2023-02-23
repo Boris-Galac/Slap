@@ -1,0 +1,139 @@
+/* open ham animation */
+
+.nav__ham-line:first-child.active {
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.nav__ham-line:nth-child(2).active {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.nav__ham-line:last-child.active {
+  bottom: 50%;
+  transform: rotate(135deg) translateY(-50%);
+}
+
+/* open & close nav menu */
+
+.nav__list.inactive {
+  animation: navClose 0.2s forwards ease-out;
+}
+@keyframes navClose {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.nav__list[data-visible="true"] {
+  animation: navOpen 0.5s forwards ease-out;
+}
+@keyframes navOpen {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* overlay */
+
+.overlay[data-visible="false"] {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  inset: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: none;
+  animation: overlay-closed 0.4s forwards;
+  opacity: 0;
+}
+@keyframes overlay-closed {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.overlay[data-visible="true"] {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  inset: 0;
+  z-index: 0;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: visible;
+  animation: overlay-opened 1s forwards;
+}
+@keyframes overlay-opened {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* search */
+
+.search__overlay[data-visible="true"] {
+  animation: search-opened 0.3s forwards;
+}
+@keyframes search-opened {
+  from {
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    opacity: 1;
+    pointer-events: visible;
+  }
+}
+
+/* specific */
+
+.hidden {
+  opacity: 0;
+  transition: 2s;
+  transform: translatex(100%);
+}
+.show {
+  opacity: 1;
+  transform: translatex(0);
+}
+
+/* show button scroll to top */
+
+.scroll-to-top[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-to-top[data-visible="true"] {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+/* progress indicator line */
+.indicator-scroll-line {
+  border: 2px solid limegreen;
+  box-shadow: 0 0 5px lime;
+}
+.indicator-scroll-line[data-visible="false"] {
+  display: none;
+}
+.indicator-scroll-line[data-visible="true"] {
+  display: block;
+}
+
+/* header on scroll */
+
+.header.active {
+  box-shadow: 0 0 14px rgb(24, 68, 65);
+}

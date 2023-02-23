@@ -1,0 +1,44 @@
+.slap-section {
+  position: relative;
+  isolation: isolate;
+  padding-inline: 5vw;
+}
+.slap-section .container {
+  padding-bottom: 20rem;
+}
+.slap-section::before {
+  content: "";
+  position: absolute;
+  background: url("/wp-content/themes/slap/assets/images/overlay-o-nama.jpg")
+    no-repeat center center/cover;
+  inset: 0;
+  z-index: -1;
+}
+.slap-section::after {
+  content: "";
+  position: absolute;
+  background: url("/wp-content/themes/slap/assets/images/slap-1.png") no-repeat
+    center center/cover;
+  bottom: 0;
+  top: 72%;
+  left: 0;
+  z-index: -1;
+  right: 0;
+  opacity: 0.4;
+}
+.slap-section__img-slap {
+  margin-inline: auto;
+  opacity: 0.5;
+}
+.slap-section__img-konferencija {
+  max-height: 12rem;
+  object-fit: cover;
+  width: 100%;
+}
+.slap-paragraph {
+  text-indent: 5rem;
+}
+.slap-about-heading {
+  text-transform: uppercase;
+  text-align: center;
+}

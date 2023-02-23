@@ -1,0 +1,50 @@
+.intro {
+  position: relative;
+  padding-inline: 6vw;
+  padding-bottom: 2rem;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--neutral-400);
+  width: 50%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -1rem;
+}
+.intro__heading {
+  font-family: serif;
+  font-size: 3rem;
+}
+.intro__paragraph {
+  text-indent: 3rem;
+}
+
+/* profile cards */
+
+.team {
+  position: relative;
+  padding-inline: 6vw;
+  padding-bottom: 15rem;
+  isolation: isolate;
+}
+.team::after {
+  content: "";
+  position: absolute;
+  background: url("wp-content/slap/assets/images/slap-1.png") no-repeat center
+    center/cover;
+  background-position-x: 80%;
+  top: 84%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+.team__heading {
+  padding-inline: 6vw;
+  margin-bottom: 7rem;
+}
+.team__wrapper {
+  gap: 7rem;
+}
