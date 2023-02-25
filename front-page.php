@@ -67,7 +67,7 @@
         kroz koje potiče socijalno zapošljavanje, društveno odgovorno poslovanje, međusektorsku
         suradnju te kroz svoj trening centar radi na održivosti organizacija civilnog društva.
       </p>
-      <button class="primary-btn">Više o nama</button>
+      <a href="<?php echo site_url('/slap') ?>" class="primary-btn">više o nama</a>
     </div>
     <div class="row-2">
       <img
@@ -92,32 +92,40 @@
       <figure class="program__box hidden">
         <img src="<?php echo get_theme_file_uri('assets/images/slider-img-1.jpg') ?>" alt="program" />
         <div class="flex-center-col">
-          <h2 class="program__heading">turistica</h2>
-          <p class="program__subheading">program</p>
-        </div>
-      </figure>
+          <a href="<?php echo site_url('category/turistica') ?>" class="program-link">
+            <h2 class="program__heading">turistica</h2>
+          </a>
+            <p class="program__subheading">program</p>
+          </div>
+        </figure>
       <figure class="program__box hidden">
         <img src="<?php echo get_theme_file_uri('assets/images/slider-img-2.jpg') ?>" alt="program" />
         <div class="flex-center-col">
+        <a href="<?php echo site_url('category/pomak') ?>" class="program-link">
           <h2 class="program__heading">pomak</h2>
+        </a>
           <p class="program__subheading">program</p>
         </div>
       </figure>
       <figure class="program__box hidden">
         <img src="<?php echo get_theme_file_uri('assets/images/slider-img-3.jpg') ?>" alt="program" />
         <div class="flex-center-col">
+        <a href="<?php echo site_url('category/rural') ?>" class="program-link">
           <h2 class="program__heading">
             rural
           </h2>
+        </a>
           <p class="program__subheading">program</p>
         </div>
       </figure>
       <figure class="program__box hidden">
         <img src="<?php echo get_theme_file_uri('assets/images/slider-img-4.jpg') ?>" alt="program" />
         <div class="flex-center-col">
+        <a href="<?php echo site_url('category/consult') ?>" class="program-link">
           <h2 class="program__heading">
             consult
           </h2>
+        </a>
           <p class="program__subheading">program</p>
         </div>
       </figure>

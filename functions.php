@@ -8,14 +8,6 @@ function theme_source_files(){
 
 add_action('wp_enqueue_scripts', 'theme_source_files');
 
-//// for title browser tab on which site we are
-// function theme_features(){
-//     add_theme_support('title-tag');
-//     add_theme_support('post-thumbnails');
-// }
-
-// add_action('after_setup_theme', 'theme_features');
-
 add_action( 'after_setup_theme', 'wpdocs_setup' );
 function wpdocs_setup() {
     add_theme_support( 'title-tag' );
@@ -31,4 +23,33 @@ function wpdocs_setup() {
     add_theme_support( 'customize-selective-refresh-widgets' );
     add_theme_support( 'starter-content' );
     add_theme_support( 'wp-pagenavi' ); // Add this line to enable wp-pagenavi plugin.
+    add_image_size('pageBanner', 1048, 385, true);
 }
+
+
+///// custom functions
+
+/// if there is page output title of the page, if there is a category archive page, output the category title
+
+
+function output_title(){
+    if (is_page()) {
+        echo get_the_title();
+    } elseif (is_category()) {
+        echo single_cat_title();
+    }else{
+        the_title();
+    }
+}
+// function get_last_part_of_url() {
+//     global $wp; // Access the $wp global variable
+    
+//     $current_url = add_query_arg( array(), $wp->request ); // Get the current URL
+//     $last_part = basename( rtrim( $current_url, '/' ) ); // Get the last part of the URL
+
+//     // Display the last part of the URL
+//     echo $last_part;
+// }
+
+
+

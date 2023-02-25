@@ -2,10 +2,10 @@
 <html <?php language_attributes();  ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset') ?>">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <meta name="description" content="Ovo je website udruge 'Slap', udruga za kreativni razvoj koja zagovara i promiče razvoj društvenog poduzetništva.">
-    <?php wp_head(); ?>
+  <title><?php bloginfo('name'); ?><?php wp_title('-', true, 'left'); ?></title>
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+  <meta name="description" content="Ovo je website udruge 'Slap', udruga za kreativni razvoj koja zagovara i promiče razvoj društvenog poduzetništva.">
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -68,7 +68,7 @@
           />
         </button>
         <figure class="nav__logo">
-         <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('/assets/images/slap-logo.png') ?>" alt="udruga slap" /></a> 
+         <a aria-label="Logo page" href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('/assets/images/slap-logo.png') ?>" alt="udruga slap" /></a> 
         </figure>
         <ul
           class="nav__list d-flex"
@@ -78,12 +78,11 @@
           <li class="nav__item"><a class="nav__link" href="<?php echo site_url() ?>">naslovna</a></li>
           <li class="nav__item"><a class="nav__link" href="<?php echo site_url('/slap') ?>">slap</a></li>
           <li class="nav__item"><a class="nav__link" href="<?php echo site_url('/projekti') ?>">projekti</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">tim</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">dokumenti</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">news</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">kontakt</a></li>
+          <li class="nav__item"><a class="nav__link" href="<?php echo site_url('/tim') ?>">tim</a></li>
+          <li class="nav__item"><a class="nav__link" href="<?php echo site_url('/dokumenti') ?>">dokumenti</a></li>
+          <li class="nav__item"><a class="nav__link" href="<?php echo site_url('/news') ?>">news</a></li>
+          <li class="nav__item"><a class="nav__link" href="<?php echo site_url('/kontakt') ?>">kontakt</a></li>
         </ul>
       </nav>
       <div class="indicator-scroll-line" aria-hidden="true"></div>
-
     </header>

@@ -6,14 +6,28 @@
   overflow: hidden;
   padding-inline: min(5vw, 10rem);
 }
-.article-program__header {
+.article-program__banner {
   height: 30vh;
 }
-.article-program__header > img {
+.article-program__banner > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 .article-program__heading {
   margin-bottom: 2rem;
+  position: relative;
+}
+.article-program__heading {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.article-program__heading::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: var(--neutral-700);
+  width: max(20vw, 4rem);
+  bottom: -1.5rem;
+  left: 0;
 }

@@ -1,5 +1,5 @@
 <article class="article-card d-grid">
-                    <div class="article-card__header grid-center p-3">
+                    <div class="article-card__header grid-center">
                         <a href="<?php the_permalink()?>">
                         
                     <?php if(has_post_thumbnail()){ ?>

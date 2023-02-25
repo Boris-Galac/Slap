@@ -8,15 +8,15 @@
 .pagination__wrapper {
   padding: 1rem;
   border-radius: 5px;
-  /* background-color: var(--neutral-200); */
+  width: max-content;
 }
 .pagination .pagination__wrapper > * {
   padding-inline: 0.875rem;
   padding-block: 0.5rem;
   padding-inline: 1rem;
   cursor: pointer;
-  background-color: white;
-  color: rgb(0, 0, 0);
+  background-color: var(--white);
+  color: var(--black);
   border: 2px solid #d2d9e0;
   height: max-content;
   transition: 0.2s;
@@ -24,7 +24,7 @@
 }
 .pagination .pagination__wrapper > *:hover {
   background-color: var(--neutral-500);
-  color: white;
+  color: var(--white);
 }
 .pagination .pagination__wrapper > *:first-child {
   border-radius: 4px 0 0 4px;

@@ -17,8 +17,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/src/assests/images/slap-2.jpg") no-repeat center
-    center/cover;
-  opacity: 0.055;
+  background: url("/wp-content/themes/slap/assets/images/slap-2.jpg") no-repeat
+    center center/cover;
+  opacity: 0.05;
   z-index: -1;
 }

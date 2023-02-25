@@ -66,12 +66,10 @@
 .text-center {
   text-align: center;
 }
-
-/* spacing  */
-
-/* .px-2 {
-  padding-inline: min(5vw, 2rem);
+.program-link {
+  display: grid;
+  transition: border 0.3s;
 }
-.px-1 {
-  padding-inline: min(5vw, 1rem);
-} */
+.program-link:hover {
+  text-decoration: underline;
+}
