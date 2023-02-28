@@ -1,24 +1,5 @@
 <!--sidebar-->
-<aside class="sidebar" data-visible="false" aria-expanded="false">
-  <div role="button" class="sidebar-btn">menu</div>
-  <div class="sidebar-row">
-    <form id="search" class="form__search" aria-label="search bar"
-          id="searchbar"
-          >
-          <input class="search-input" type="text" title="search bar" name="search" id="search" placeholder="Search for something...">
-          <button class="search-submit" type="submit"><img aria-hidden="true" src="<?php echo get_theme_file_uri('assets/icons/search.svg') ?>"></button>
-        </form>
-      </div>
-        <div class="sidebar-row">
-          <h3 class="sidebar__heading">Projects</h3>
-          <ul class="sidebar__list">
-            <li class="sidebar__item"><a href="#">local empowerment</a></li>
-            <li class="sidebar__item"><a href="#">capacity building</a></li>
-            <li class="sidebar__item"><a href="#">slap</a></li>
-            <li class="sidebar__item"><a href="#">slap interview</a></li>
-          </ul>
-        </div>
-      </aside>
+<?php get_sidebar() ?>
       <!------------------->
       
       <!-- search bar -->
@@ -27,14 +8,9 @@
           <div aria-hidden="true" class="line"></div>
           <div aria-hidden="true" class="line"></div>
         </button>
-        <form id="search" class="form__search" aria-label="search bar"
-        id="searchbar"
-        >
-        <input class="search-input" type="text" title="search bar" name="search" id="search" placeholder="Search for something...">
-        <button class="search-submit" type="submit"><img aria-hidden="true" src="<?php echo get_theme_file_uri('assets/icons/search.svg') ?>"></button>
-</form>
-</div>
-<!------------------->
+        <?php get_search_form(); ?>
+      </div>
+      <!------------------->
 <!-- overlay -->
 <div class="overlay" data-visible="false" aria-hidden="true"></div>
 <!------------------->

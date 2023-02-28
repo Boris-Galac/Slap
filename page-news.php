@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="news-main">
-      <!-- page indicator component -->
+      <!-- page indicator componentt -->
          <?php get_template_part('template-parts/content', 'page-indicator') ?>
       <!----------------------->
       <!-- news section -->

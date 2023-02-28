@@ -1,0 +1,17 @@
+.error-main {
+}
+.error-main {
+}
+.error-section > * > div {
+  display: grid;
+  place-items: center;
+}
+.error-page-heading {
+  font-size: clamp(2rem, 10vw, 15rem);
+  color: var(--neutral-700);
+}
+.error-page-subheading {
+  text-transform: capitalize;
+  color: var(--neutral-700);
+  font-size: 1.5rem;
+}

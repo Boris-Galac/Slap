@@ -9,5 +9,5 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/src/assests/images/news-section-bg.jpg");
+  background: url("/wp-content/themes/slap/assets/images/news-section-bg.jpg");
 }

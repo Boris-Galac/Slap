@@ -83,3 +83,22 @@
 .search-btn > * {
   pointer-events: none;
 }
+
+/* results page */
+.results-search-box {
+  padding: 1rem;
+  margin-inline: auto;
+  background-color: var(--slap-clr);
+  border-radius: 0.2rem;
+}
+.results-search-box .form__search {
+  width: max(40vw, 14rem);
+}
+.results-search-box .h2--heading {
+  color: var(--white);
+}
+.no-results {
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--neutral-600);
+}

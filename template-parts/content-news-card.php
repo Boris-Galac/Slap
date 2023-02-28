@@ -16,14 +16,16 @@
                   />
                   <p><?php the_time('F j, Y') ?></p></span
                 >
-                <span class="meta-info__category">Turistica</span>
+                <span class="meta-info__category"><?php the_field('category_news') ?></span>
               </span>
               <div class="news-card__body p-1">
                 <h2 class="news-card__heading"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
                 <p class="news-card__paragraph">
-                  <?php echo wp_trim_words(get_the_content(), 12) ?>
+                  <?php 
+                    echo wp_trim_words(get_the_excerpt(), 30); 
+                  ?>
                 </p>
-                <button class="news-card__btn secondary-btn">vidi više</button>
+                <a href="<?php the_permalink() ?>" class="news-card__btn secondary-btn">vidi više</a>
               </div>
             </div>
           </article>

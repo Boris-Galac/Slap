@@ -31,7 +31,6 @@ function wpdocs_setup() {
 
 /// if there is page output title of the page, if there is a category archive page, output the category title
 
-
 function output_title(){
     if (is_page()) {
         echo get_the_title();
@@ -51,5 +50,8 @@ function output_title(){
 //     echo $last_part;
 // }
 
+
+
+//////////// CUSTOM POST TYPES
 
 

@@ -2,9 +2,25 @@
 <html <?php language_attributes();  ?>>
 
 <head>
-  <title><?php bloginfo('name'); ?><?php wp_title('-', true, 'left'); ?></title>
+  <title><?php bloginfo('name'); ?><?php wp_title('-', true, 'left'); ?></title> 
   <meta name="viewport" content="width=device-width, inital-scale=1">
-  <meta name="description" content="Ovo je website udruge 'Slap', udruga za kreativni razvoj koja zagovara i promiče razvoj društvenog poduzetništva.">
+  <!-- Primary Meta Tags -->
+<meta name="title" content="Slap – Udruga za kreativni razvoj Slap">
+<meta name="description" content="Ovo je website udruge 'Slap', udruga za kreativni razvoj koja zagovara i promiče razvoj društvenog poduzetništva.">
+<meta name="keywords" content="poduzetništvo, društvo, razvoj, slap, udruga, socijalno podruzetnistvo">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://slap.hr/">
+<meta property="og:title" content="Slap – Udruga za kreativni razvoj Slap">
+<meta property="og:description" content="Ovo je website udruge 'Slap', udruga za kreativni razvoj koja zagovara i promiče razvoj društvenog poduzetništva.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://slap.hr/">
+<meta property="twitter:title" content="Slap – Udruga za kreativni razvoj Slap">
+<meta property="twitter:description" content="Ovo je website udruge 'Slap', udruga za kreativni razvoj koja zagovara i promiče razvoj društvenog poduzetništva.">
+<meta property="twitter:image" content="">
   <?php wp_head(); ?>
 </head>
 

@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <main class="team-main">
+  <!-- page indicator component -->
+ <?php get_template_part('template-parts/content', 'page-indicator') ?>
+  <!----------------------->
       <div class="container">
-        <!-- page indicator component -->
-       <?php get_template_part('template-parts/content', 'page-indicator') ?>
-        <!----------------------->
         <!-- intro section -->
         <section class="intro mb-3">
           <h2 class="intro__heading h2--heading">par uvodnih riječi...</h2>
