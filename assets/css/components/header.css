@@ -39,7 +39,7 @@
 
 .nav__list {
   justify-content: center;
-  gap: clamp(1rem, 5vw, 3rem);
+  gap: 5vw;
   font-weight: 500;
   flex-direction: column;
   position: fixed;
@@ -51,7 +51,12 @@
 .nav__link {
   text-transform: uppercase;
   transition: 0.2s;
-  font-size: 2rem;
+  font-size: clamp(1rem, 5vw, 2.5rem);
+}
+@media (max-width: 390px) {
+  .nav__list {
+    margin-top: 4rem;
+  }
 }
 .nav__list:hover .nav__link {
   opacity: 0.4;

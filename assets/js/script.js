@@ -79,7 +79,7 @@ if (frontPage) {
   right.addEventListener("click", (e) => {
     scrollContainer.scrollBy({
       top: 0,
-      left: 1,
+      left: 307,
       behavior: "smooth",
     });
   });
@@ -87,7 +87,7 @@ if (frontPage) {
   left.addEventListener("click", (e) => {
     scrollContainer.scrollBy({
       top: 0,
-      left: -1,
+      left: -307,
       behavior: "smooth",
     });
   });

@@ -6,29 +6,11 @@
 <section class="section hero">
   <div class="slider">
     <div class="hero__slider d-flex">
-      <figure class="hero__slider-picture current">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-1.jpg') ?>" alt="image" />
+      <figure class="hero__slider-picture current" data-text="Zašto biti kap kad možeš biti Slap">
+        <img src="<?php echo get_theme_file_uri('assets/images/slider/slap-slider-1.png') ?>" alt="image" />
       </figure>
       <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-2.jpg') ?>" alt="image" />
-      </figure>
-      <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-3.jpg') ?>" alt="image" />
-      </figure>
-      <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-4.jpg') ?>" alt="image" />
-      </figure>
-      <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-5.jpg') ?>" alt="image" />
-      </figure>
-      <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-6.jpg') ?>" alt="image" />
-      </figure>
-      <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-7.jpg') ?>" alt="image" />
-      </figure>
-      <figure class="hero__slider-picture">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-8.jpg') ?>" alt="image" />
+        <img src="<?php echo get_theme_file_uri('assets/images/slider/slap-slider-2.png') ?>" alt="image" />
       </figure>
     </div>
     <div class="hero__arrows d-flex">
@@ -90,8 +72,8 @@
   <h2 class="programs__heading h2--heading px-2">Programs</h2>
     <div class="programs__wrapper d-flex">
       <figure class="program__box hidden">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-1.jpg') ?>" alt="program" />
-        <div class="flex-center-col">
+        <img class="program__box-img" src="<?php echo get_theme_file_uri('assets/images/programi/turistica-image.jpg') ?>" alt="program" />
+        <div class="program__box-title flex-center-col">
           <a href="<?php echo site_url('category/turistica') ?>" class="program-link">
             <h2 class="program__heading">turistica</h2>
           </a>
@@ -99,8 +81,8 @@
           </div>
         </figure>
       <figure class="program__box hidden">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-2.jpg') ?>" alt="program" />
-        <div class="flex-center-col">
+        <img class="program__box-img" src="<?php echo get_theme_file_uri('assets/images/programi/pomak-image.jpg') ?>" alt="program" />
+        <div class="program__box-title flex-center-col">
         <a href="<?php echo site_url('category/pomak') ?>" class="program-link">
           <h2 class="program__heading">pomak</h2>
         </a>
@@ -108,8 +90,8 @@
         </div>
       </figure>
       <figure class="program__box hidden">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-3.jpg') ?>" alt="program" />
-        <div class="flex-center-col">
+        <img class="program__box-img" src="<?php echo get_theme_file_uri('assets/images/programi/rural-image.jpg') ?>" alt="program" />
+        <div class="program__box-title flex-center-col">
         <a href="<?php echo site_url('category/rural') ?>" class="program-link">
           <h2 class="program__heading">
             rural
@@ -119,8 +101,8 @@
         </div>
       </figure>
       <figure class="program__box hidden">
-        <img src="<?php echo get_theme_file_uri('assets/images/slider-img-4.jpg') ?>" alt="program" />
-        <div class="flex-center-col">
+        <img class="program__box-img" src="<?php echo get_theme_file_uri('assets/images/programi/consult-image.jpg') ?>" alt="program" />
+        <div class="program__box-title flex-center-col">
         <a href="<?php echo site_url('category/consult') ?>" class="program-link">
           <h2 class="program__heading">
             consult

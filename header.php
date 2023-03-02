@@ -3,6 +3,7 @@
 
 <head>
   <title><?php bloginfo('name'); ?><?php wp_title('-', true, 'left'); ?></title> 
+  <link rel="shortcut icon" href="/wp-content/themes/slap/assets/icons/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, inital-scale=1">
   <!-- Primary Meta Tags -->
 <meta name="title" content="Slap – Udruga za kreativni razvoj Slap">
@@ -29,16 +30,16 @@
     <header class="header">
       <div class="header__contact d-flex">
         <div class="header__socials d-flex">
-          <a href="#">
+          <a href="https://www.facebook.com/udrugaslap" target="_blank">
             <img src="<?php echo get_theme_file_uri('/assets/icons/facebook-icon.svg') ?>" alt="facebook" />
           </a>
-          <a href="#">
+          <a href="https://www.youtube.com/@UdrugaSlap" target="_blank">
             <img src="<?php echo get_theme_file_uri('/assets/icons/youtube-icon.svg') ?>" alt="youtube" />
           </a>
-          <a href="#">
+          <a href="<?php echo site_url('/page-kontakt') ?>">
             <img src="<?php echo get_theme_file_uri('/assets/icons/mail-icon.svg') ?>" alt="mail" />
           </a>
-          <a href="#">
+          <a href="#" target="_blank">
             <img src="<?php echo get_theme_file_uri('/assets/icons/google-icon.svg') ?>" alt="google-plus" />
           </a>
         </div>
