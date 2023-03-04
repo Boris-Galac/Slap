@@ -70,6 +70,11 @@
   left: 50%;
   width: max-content;
 }
+@media (min-width: 1500px) {
+  .hero__slider-picture:nth-child(1) {
+    width: 100%;
+  }
+}
 .hero__arrows {
   position: absolute;
   transform: translate(-50%, -50%);

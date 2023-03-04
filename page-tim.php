@@ -31,7 +31,7 @@
           <h2 class="team__heading h2--heading text-center">Članovi Slapa</h2>
           <div class="team__wrapper d-grid">
             <div class="team-card p-2 d-grid hidden">
-              <img src="<?php echo get_theme_file_uri('/assets/images/avatars/sonja-vuković.png') ?>" alt="team member" class="team-card__avatar">
+              <img src="<?php echo get_theme_file_uri('/assets/images/avatars/sonja-vukovic.png') ?>" alt="team member" class="team-card__avatar">
               <h3 class="team-card__name">sonja vuković</h3>
               <h4 class="team-card__role">Programska je koordinatorica i predsjednica Udruge.</h4>
               <p>S jasnom vizijom osnovala je Slap 2000. Godine pod krilaticom: „Zašto biti kap kad možeš biti Slap“.
