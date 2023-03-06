@@ -29,13 +29,9 @@
   bottom: -0.5rem;
   left: 0;
 }
-.footer__col {
-}
 .footer__list {
   flex-direction: column;
   gap: 1rem;
-}
-.footer__item img {
 }
 .footer__item {
   gap: 0.7rem;

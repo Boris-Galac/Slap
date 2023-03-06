@@ -1,3 +1,15 @@
+.intro-msg {
+  position: fixed;
+  inset: 0;
+  background-color: var(--white);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+.intro-msg__slap {
+  width: min(40vw, 20rem);
+}
+
 /* front page */
 
 .front-page-main {
@@ -10,18 +22,6 @@
 
 .welcome {
   padding-block: 4rem;
-  opacity: 0;
-  animation: hero-text 2s ease-out forwards;
-}
-@keyframes hero-text {
-  from {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .welcome__heading {
   margin-inline: 1rem;

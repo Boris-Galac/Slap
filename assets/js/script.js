@@ -280,3 +280,32 @@ const isScrolling = () => {
 };
 
 window.addEventListener("scroll", isScrolling);
+
+////////// INTRO MSG
+
+if (window.location.href === "http://slap.local/") {
+  document.addEventListener("DOMContentLoaded", (e) => {
+    const introMessage = document.createElement("div");
+    introMessage.classList.add("intro-msg");
+    const img = `<img class="intro-msg__slap" src="/wp-content/themes/slap/assets/images/slap-intro.png" alt="logo slap">`;
+    introMessage.innerHTML += img;
+    document.body.append(introMessage);
+    gsap.to(".intro-msg", {
+      opacity: 0,
+      duration: 1,
+      delay: 2,
+      ease: "power3.out",
+    });
+    setTimeout(() => {
+      document.querySelector(".intro-msg").remove();
+    }, 3000);
+  });
+}
+
+gsap.from(".welcome", {
+  duration: 3,
+  delay: 2.5,
+  x: "-100%",
+  opacity: 0,
+  ease: "expo",
+});

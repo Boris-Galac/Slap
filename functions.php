@@ -3,6 +3,7 @@
 //// loading sources files
 function theme_source_files(){
     wp_enqueue_style('main-css', get_theme_file_uri('assets/css/style.css'));
+    wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js', array(), '3.11.4', true );
     wp_enqueue_script('main-js', get_theme_file_uri('assets/js/script.js'), array(), false, true);
 }
 

@@ -37,7 +37,7 @@
   bottom: -3px;
   height: 1px;
   width: 80%;
-  background-color: rgb(101, 131, 158);
+  background-color: hsl(208, 23%, 51%);
 }
 .sidebar__list {
   display: grid;
